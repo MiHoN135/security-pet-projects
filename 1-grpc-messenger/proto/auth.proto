@@ -1,0 +1,11 @@
+syntax = "proto3";
+package messenger;
+
+service Auth {
+  rpc Register (AuthRequest) returns (StatusReply);
+  rpc Login (AuthRequest) returns (LoginReply);
+}
+
+message AuthRequest { string username = 1; string password = 2; }
+message StatusReply { bool ok = 1; string error = 2; }
+message LoginReply { bool ok = 1; string error = 2; string token = 3; }

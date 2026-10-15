@@ -1,0 +1,5 @@
+__pycache__/
+*.db
+*.pem
+*.sig
+.venv/

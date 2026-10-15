@@ -1,0 +1,5 @@
+[
+  {"name": "credit_card", "pattern": "\\b\\d{4}[- ]?\\d{4}[- ]?\\d{4}[- ]?\\d{4}\\b", "action": "block", "reason": "Обнаружен номер кредитной карты"},
+  {"name": "passport", "pattern": "\\b\\d{4}\\s*№?\\s*\\d{6}\\b", "action": "block", "reason": "Обнаружен номер паспорта"},
+  {"name": "phone", "pattern": "\\+7\\d{10}\\b", "action": "warn", "reason": "Обнаружен номер телефона"}
+]
